@@ -7,11 +7,11 @@ Tall tooth = bit `1`, short tooth = bit `0`.
 **Live demo:** <https://koskja.github.io/binaryrake/>
 
 ```
-0xDEADBEEF      0o755            0b11110000       0q0123
-                                                  ┃ ┃   ┃
- ┃ ┃   ┃ ┃ ┃     ┃ ┃ ┃ ┃ ┃ ┃     ┃ ┃ ┃ ┃          ┃ ┃ ┃ ┃
- ┃ ┃ ┃ ┃ ┃ ┃     ┃ ┃ ┃ ┃ ┃ ┃     ┃ ┃ ┃ ┃          ┃ ┃ ┃ ┃
-━━━━━━━━━━━━    ━━━━━━━━━━━     ━━━━━━━━━━       ━━━━━━━━━
+0xDE        0o755        0b11110000    0q0123
+┃┃ ┃┃┃┃     ┃┃┃┃ ┃┃ ┃    ┃┃┃┃             ┃┃ ┃┃
+┃┃ ┃┃┃┃     ┃┃┃┃ ┃┃ ┃    ┃┃┃┃             ┃┃ ┃┃
+┃┃┃┃┃┃┃┃    ┃┃┃┃┃┃┃┃┃    ┃┃┃┃┃┃┃┃      ┃┃┃┃┃┃┃┃
+━━━━━━━━    ━━━━━━━━━    ━━━━━━━━      ━━━━━━━━
 ```
 
 The plain glyphs are untouched — rakes only fire inside numeric literals via
@@ -83,6 +83,18 @@ build_demo.py    render demo.html with the font inlined as a data URL
 config.py        all geometry & identity knobs
 .cache/          downloaded base font (gitignored)
 ```
+
+## Authorship
+
+Vibecoded end to end with Claude — the FEA chained-context structure, the
+`OVERLAP_SIMPLE` browser workaround, this README, the CI workflow. It works
+(the deploy badge above is the proof), but the source is closer to an
+iterative sketch than a polished artifact.
+
+Inspired by ["the best way to count"][yt] — the rake treatment of binary
+numbers comes from there.
+
+[yt]: https://www.youtube.com/watch?v=rDDaEVcwIJM
 
 ## License
 
